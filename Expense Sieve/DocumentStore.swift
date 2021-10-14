@@ -9,8 +9,14 @@
 import Foundation
 
 class DocumentStore {
-    
+
+    enum DirectoryPathModifier: String {
+        case sieve
+        case sieveTest
+    }
+
     // MARK: - Properties
+
     private let docDirectory: URL =
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     private var ioQueue: OperationQueue = {
@@ -19,13 +25,20 @@ class DocumentStore {
         return queue
     }()
     private var documentURLs: [String:URL] = [:]
-    
+    private var directoryPathModifier: DirectoryPathModifier
+
+    // MARK: - Initialization
+
+    init(for directoryPathModifier: DirectoryPathModifier = .sieve) {
+        self.directoryPathModifier = directoryPathModifier
+    }
+
     // MARK: - Managing Documents
     
     func createDocument(completion: @escaping (Document)->Void) {
         // Create a new document
         let identifier = UUID().uuidString
-        let docURL = docDirectory.appendingPathComponent("\(identifier).sieve")
+        let docURL = docDirectory.appendingPathComponent("\(identifier)." + directoryPathModifier.rawValue)
         let doc = Document(fileURL: docURL)
         
         // Give the newly-created document an on-disk representation
@@ -63,7 +76,7 @@ class DocumentStore {
             
             // Generate a new array of summaries from the reports on disk
             for url in urls {
-                guard url.pathExtension == "sieve" else { continue }
+                guard directoryPathModifier.rawValue == url.pathExtension else { continue }
                 // step into the .sieve directory and get the report archive there
                 let reportURL = url.appendingPathComponent(Document.reportFilename)
                 let decoder = JSONDecoder()
