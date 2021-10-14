@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Expense: Codable {
+struct Expense: Codable {
     
     private(set) var photoKey = UUID().uuidString
     var amount = 0.0
