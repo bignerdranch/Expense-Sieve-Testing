@@ -11,7 +11,7 @@ import XCTest
 
 class DocumentStoreTests: XCTestCase {
 
-    let documentStore = DocumentStore(for: .sieveTest)
+    let documentStore = DocumentStore(for: .test)
     
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,10 +26,18 @@ class DocumentStoreTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
-    func testFetchDocuments() throws {
+    func testReadSummaries() throws {
         documentStore.loadSummaries { (summaries) in
             dump(summaries)
         }
+    }
+
+    func testCreateDocument() throws {
+        let exp = expectation(description: "Creating a document")
+        documentStore.createDocument(completion: { _ in
+            exp.fulfill()
+        })
+        waitForExpectations(timeout: 3)
     }
 
     func testPerformanceExample() throws {

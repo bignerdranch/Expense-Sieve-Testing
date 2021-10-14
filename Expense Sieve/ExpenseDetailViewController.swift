@@ -131,7 +131,7 @@ class ExpenseDetailViewController: UIViewController, UITextFieldDelegate, UINavi
     
     func updateVendor(_ newVendor: String?) {
         let oldVendor = currentExpense.vendor
-        
+
         currentExpense.vendor = newVendor ?? NSLocalizedString("Unknown Vendor", comment: "")
         vendorField.text = newVendor
 
