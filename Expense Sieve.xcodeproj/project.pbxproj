@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A072091E27173E7F00A7E953 /* Expense_SieveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072091D27173E7F00A7E953 /* Expense_SieveUITests.swift */; };
+		A07209272718796C00A7E953 /* ReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07209262718796C00A7E953 /* ReportTests.swift */; };
+		A07209292718980000A7E953 /* DocumentStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07209282718980000A7E953 /* DocumentStoreTests.swift */; };
+		A0EC94582719FB1300E730B1 /* DocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EC94572719FB1300E730B1 /* DocumentTests.swift */; };
 		A6476B1D1D6C169300DD2975 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6476B1C1D6C169300DD2975 /* ImageCache.swift */; };
 		A6A46BA91D51329E000F173E /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A46BA81D51329E000F173E /* DatePickerViewController.swift */; };
 		A6AED6561D53BDB400BF46B3 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AED6551D53BDB400BF46B3 /* ExpensesViewController.swift */; };
@@ -22,7 +26,32 @@
 		A6E49D441D3D8B1A009A13BB /* ExpenseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E49D431D3D8B1A009A13BB /* ExpenseDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A072091227173E5D00A7E953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6C097C31D2EC07E002244E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6C097CA1D2EC07E002244E7;
+			remoteInfo = "Expense Sieve";
+		};
+		A072092027173E7F00A7E953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6C097C31D2EC07E002244E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6C097CA1D2EC07E002244E7;
+			remoteInfo = "Expense Sieve";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A072090D27173E5D00A7E953 /* Expense SieveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Expense SieveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A072091127173E5D00A7E953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A072091B27173E7F00A7E953 /* Expense SieveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Expense SieveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A072091D27173E7F00A7E953 /* Expense_SieveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_SieveUITests.swift; sourceTree = "<group>"; };
+		A072091F27173E7F00A7E953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A07209262718796C00A7E953 /* ReportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTests.swift; sourceTree = "<group>"; };
+		A07209282718980000A7E953 /* DocumentStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentStoreTests.swift; sourceTree = "<group>"; };
+		A0EC94572719FB1300E730B1 /* DocumentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTests.swift; sourceTree = "<group>"; };
 		A6476B1C1D6C169300DD2975 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		A6A46BA81D51329E000F173E /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		A6AED6551D53BDB400BF46B3 /* ExpensesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +70,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A072090A27173E5D00A7E953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A072091827173E7F00A7E953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6C097C81D2EC07E002244E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,6 +94,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A072090E27173E5D00A7E953 /* Expense SieveTests */ = {
+			isa = PBXGroup;
+			children = (
+				A07209252718789600A7E953 /* Model */,
+				A072091127173E5D00A7E953 /* Info.plist */,
+			);
+			path = "Expense SieveTests";
+			sourceTree = "<group>";
+		};
+		A072091C27173E7F00A7E953 /* Expense SieveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A072091D27173E7F00A7E953 /* Expense_SieveUITests.swift */,
+				A072091F27173E7F00A7E953 /* Info.plist */,
+			);
+			path = "Expense SieveUITests";
+			sourceTree = "<group>";
+		};
+		A07209252718789600A7E953 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A07209262718796C00A7E953 /* ReportTests.swift */,
+				A07209282718980000A7E953 /* DocumentStoreTests.swift */,
+				A0EC94572719FB1300E730B1 /* DocumentTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A6AED6501D53A86F00BF46B3 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				A6C097CD1D2EC07E002244E7 /* Expense Sieve */,
+				A072090E27173E5D00A7E953 /* Expense SieveTests */,
+				A072091C27173E7F00A7E953 /* Expense SieveUITests */,
 				A6C097CC1D2EC07E002244E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				A6C097CB1D2EC07E002244E7 /* Expense Sieve.app */,
+				A072090D27173E5D00A7E953 /* Expense SieveTests.xctest */,
+				A072091B27173E7F00A7E953 /* Expense SieveUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +190,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A072090C27173E5D00A7E953 /* Expense SieveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A072091627173E5D00A7E953 /* Build configuration list for PBXNativeTarget "Expense SieveTests" */;
+			buildPhases = (
+				A072090927173E5D00A7E953 /* Sources */,
+				A072090A27173E5D00A7E953 /* Frameworks */,
+				A072090B27173E5D00A7E953 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A072091327173E5D00A7E953 /* PBXTargetDependency */,
+			);
+			name = "Expense SieveTests";
+			productName = "Expense SieveTests";
+			productReference = A072090D27173E5D00A7E953 /* Expense SieveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A072091A27173E7F00A7E953 /* Expense SieveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A072092227173E7F00A7E953 /* Build configuration list for PBXNativeTarget "Expense SieveUITests" */;
+			buildPhases = (
+				A072091727173E7F00A7E953 /* Sources */,
+				A072091827173E7F00A7E953 /* Frameworks */,
+				A072091927173E7F00A7E953 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A072092127173E7F00A7E953 /* PBXTargetDependency */,
+			);
+			name = "Expense SieveUITests";
+			productName = "Expense SieveUITests";
+			productReference = A072091B27173E7F00A7E953 /* Expense SieveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A6C097CA1D2EC07E002244E7 /* Expense Sieve */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6C097DD1D2EC07E002244E7 /* Build configuration list for PBXNativeTarget "Expense Sieve" */;
@@ -138,10 +249,18 @@
 		A6C097C31D2EC07E002244E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Big Nerd Ranch";
 				TargetAttributes = {
+					A072090C27173E5D00A7E953 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = A6C097CA1D2EC07E002244E7;
+					};
+					A072091A27173E7F00A7E953 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = A6C097CA1D2EC07E002244E7;
+					};
 					A6C097CA1D2EC07E002244E7 = {
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 1020;
@@ -163,11 +282,27 @@
 			projectRoot = "";
 			targets = (
 				A6C097CA1D2EC07E002244E7 /* Expense Sieve */,
+				A072090C27173E5D00A7E953 /* Expense SieveTests */,
+				A072091A27173E7F00A7E953 /* Expense SieveUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A072090B27173E5D00A7E953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A072091927173E7F00A7E953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6C097C91D2EC07E002244E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +316,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A072090927173E5D00A7E953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0EC94582719FB1300E730B1 /* DocumentTests.swift in Sources */,
+				A07209292718980000A7E953 /* DocumentStoreTests.swift in Sources */,
+				A07209272718796C00A7E953 /* ReportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A072091727173E7F00A7E953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A072091E27173E7F00A7E953 /* Expense_SieveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6C097C71D2EC07E002244E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +352,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A072091327173E5D00A7E953 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6C097CA1D2EC07E002244E7 /* Expense Sieve */;
+			targetProxy = A072091227173E5D00A7E953 /* PBXContainerItemProxy */;
+		};
+		A072092127173E7F00A7E953 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6C097CA1D2EC07E002244E7 /* Expense Sieve */;
+			targetProxy = A072092027173E7F00A7E953 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A6C097D21D2EC07E002244E7 /* Main.storyboard */ = {
@@ -220,6 +386,118 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A072091427173E5D00A7E953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A45JMF99M;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Expense SieveTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "big-nerd-ranch.Expense-SieveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Expense Sieve.app/Expense Sieve";
+			};
+			name = Debug;
+		};
+		A072091527173E5D00A7E953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A45JMF99M;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Expense SieveTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "big-nerd-ranch.Expense-SieveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Expense Sieve.app/Expense Sieve";
+			};
+			name = Release;
+		};
+		A072092327173E7F00A7E953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A45JMF99M;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Expense SieveUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "big-nerd-ranch.Expense-SieveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Expense Sieve";
+			};
+			name = Debug;
+		};
+		A072092427173E7F00A7E953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A45JMF99M;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Expense SieveUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "big-nerd-ranch.Expense-SieveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Expense Sieve";
+			};
+			name = Release;
+		};
 		A6C097DB1D2EC07E002244E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -354,7 +632,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 439592V3LM;
 				INFOPLIST_FILE = "Expense Sieve/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -369,6 +647,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A072091627173E5D00A7E953 /* Build configuration list for PBXNativeTarget "Expense SieveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A072091427173E5D00A7E953 /* Debug */,
+				A072091527173E5D00A7E953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A072092227173E7F00A7E953 /* Build configuration list for PBXNativeTarget "Expense SieveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A072092327173E7F00A7E953 /* Debug */,
+				A072092427173E7F00A7E953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A6C097C61D2EC07E002244E7 /* Build configuration list for PBXProject "Expense Sieve" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

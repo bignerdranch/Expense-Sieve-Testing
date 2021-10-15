@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Report: Codable {
+struct Report: Codable {
     
     // MARK: - Basic state
     
@@ -29,11 +29,15 @@ class Report: Codable {
         let identifier: String
         let title: String?
         let expenseTotal: Double
-        
-        init(report: Report) {
-            identifier = report.identifier
-            title = report.title
-            expenseTotal = report.expenseTotal
-        }
+    }
+
+}
+
+extension Report.Summary {
+    // Adding the initializer to an extension allows us to keep the memberwise initializer
+    init(report: Report) {
+        identifier = report.identifier
+        title = report.title
+        expenseTotal = report.expenseTotal
     }
 }

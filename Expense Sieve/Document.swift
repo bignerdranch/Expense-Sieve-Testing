@@ -20,8 +20,21 @@ class Document: UIDocument, ImageCache {
     
     lazy var report = Report()
     private lazy var packageWrapper = FileWrapper(directoryWithFileWrappers: [:])
-    static let reportFilename = "report.archive"
-    
+    let pathModifier: DocumentStore.DirectoryPathModifier
+
+    static func reportFileName(for pathModifier: DocumentStore.DirectoryPathModifier) -> String {
+        switch pathModifier {
+        case .sieve:
+            return "report.archive"
+        case .test:
+            return "test.archive"
+        }
+    }
+
+    init(fileURL: URL, pathModifier: DocumentStore.DirectoryPathModifier) {
+        self.pathModifier = pathModifier
+        super.init(fileURL: fileURL)
+    }
     // MARK: - Document saving/loading
     
     override func contents(forType typeName: String) throws -> Any {
@@ -30,11 +43,11 @@ class Document: UIDocument, ImageCache {
         let reportData = try encoder.encode(report)
         
         // remove the report.archive before adding it to prevent duplicate fileWrappers being created
-        if let fileWrapper = packageWrapper.fileWrappers?[Document.reportFilename] {
+        if let fileWrapper = packageWrapper.fileWrappers?[Document.reportFileName(for: pathModifier)] {
             packageWrapper.removeFileWrapper(fileWrapper)
         }
         
-        packageWrapper.addRegularFile(withContents: reportData, preferredFilename: Document.reportFilename)
+        packageWrapper.addRegularFile(withContents: reportData, preferredFilename: Document.reportFileName(for: pathModifier))
         
         return packageWrapper
     }
@@ -42,7 +55,7 @@ class Document: UIDocument, ImageCache {
     override func load(fromContents contents: Any, ofType typeName: String?) throws {
         
         guard let packageWrapper = contents as? FileWrapper,
-              let reportWrapper = packageWrapper.fileWrappers?[Document.reportFilename],
+              let reportWrapper = packageWrapper.fileWrappers?[Document.reportFileName(for: pathModifier)],
               let reportData = reportWrapper.regularFileContents else {
             throw Error.unexpectedContents
         }
