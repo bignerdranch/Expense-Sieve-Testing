@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A072091027173E5D00A7E953 /* Expense_SieveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072090F27173E5D00A7E953 /* Expense_SieveTests.swift */; };
 		A072091E27173E7F00A7E953 /* Expense_SieveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072091D27173E7F00A7E953 /* Expense_SieveUITests.swift */; };
 		A07209272718796C00A7E953 /* ReportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07209262718796C00A7E953 /* ReportTests.swift */; };
 		A07209292718980000A7E953 /* DocumentStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07209282718980000A7E953 /* DocumentStoreTests.swift */; };
@@ -46,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		A072090D27173E5D00A7E953 /* Expense SieveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Expense SieveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A072090F27173E5D00A7E953 /* Expense_SieveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_SieveTests.swift; sourceTree = "<group>"; };
 		A072091127173E5D00A7E953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A072091B27173E7F00A7E953 /* Expense SieveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Expense SieveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A072091D27173E7F00A7E953 /* Expense_SieveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense_SieveUITests.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				A07209252718789600A7E953 /* Model */,
-				A072090F27173E5D00A7E953 /* Expense_SieveTests.swift */,
 				A072091127173E5D00A7E953 /* Info.plist */,
 			);
 			path = "Expense SieveTests";
@@ -324,7 +321,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0EC94582719FB1300E730B1 /* DocumentTests.swift in Sources */,
-				A072091027173E5D00A7E953 /* Expense_SieveTests.swift in Sources */,
 				A07209292718980000A7E953 /* DocumentStoreTests.swift in Sources */,
 				A07209272718796C00A7E953 /* ReportTests.swift in Sources */,
 			);
